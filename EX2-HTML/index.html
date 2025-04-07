@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinchan - Homepage</title>
+    <style>
+        header{
+            text-align: center;
+        }
+        .basic-nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+       .basic-nav {
+            text-align: center;
+        }
+        .character-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+        .character-card {
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .character-name {
+            padding: 15px;
+            color: black;
+            font-weight: bold;
+        }
+        .character-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .character-desc {
+            padding: 15px;
+            color: black;
+            font-size: 14px;
+            min-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    
+        <header>
+                <img src="assets/shin-chan-banner.jpg" alt="Shinchan banner" width="600">
+                &nbsp;
+                <img src="assets/naughtiest-son.jpg" alt = "picture2" height="200">
+               
+            
+        </header>
+        
+        <nav class = "basic-nav">
+            <ul>
+                <li><a href="#section1">Shinchan:Shiro and the Coal Town Game</a></li>
+                 &nbsp;
+                 <li><a href="#section2">Characters</a></li>
+                 &nbsp;
+                 <li><a href="#section3">Who's your favourite?</a></li>
+              
+            </ul>
+        </nav>
+
+       
+       
+        <main>
+            <section id = "section1">
+            <h1 style = "text-align:center;">Shinchan:Shhiro and the Coal Town</h1>
+            <h3 style = "text-align:center;">(Available on: Nintendo Switch and Windows PC)</h2>
+            </section>
+
+            <section id = "section2">
+                <h3 style = "text-align:center;">The Characters</h3>
+               
+            <div class="character-gallery">
+                <div class="character-card">
+                    <div class="character-name"> Shinnosuke Nohara (Shinchan)</div>
+                    <img src="assets/character-shinchan.png" alt="Shinchan">
+                    <div class="character-desc"> The mischievous 5-year-old protagonist known for his
+                        hilarious antics and love of choco chips</div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-name"> Misae Nohara (Mom)</div>
+
+
+                    <img src="assets/character-misae.webp" alt="Misae">
+                    <div class="character-desc"> Shinchan's short-tempered but loving mother, always
+                        trying to keep him in line</div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-name"> Hiroshi Nohara (Dad)</div>
+                    <img src="assets/character-hiroshi.webp" alt="Hiroshi">
+                    <div class="character-desc">The laid-back father who works at a company
+                        and enjoys his evening beer.</div>
+                </div>
+            </div>
+            
+
+            <div class="character-gallery">
+                <div class="character-card">
+                    <div class="character-name"> Himawari (Sister)</div>
+                    <img src="assets/character-himawari.png" alt="Himawari">
+                    <div class="character-desc"> The youngest of the Noharas. Loves shiny objects and brand
+                        name goods. Smiles sideways, like Shinchan</div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-name">Yukino Nohara (Shiro)</div>
+                    <img src="assets/character-shiro.png" alt="Shiro">
+                    <div class="character-desc"> The family dog — small, fluffy, and sometimes the
+                        most sensible member of the household.</div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-name">Toru Kazama</div>
+                    <img src="assets/character-toru-kazama.webp" alt="Kazama">
+                    <div class="character-desc">The smart and responsible friend of Shinchan,
+                        often the voice of reason in the group.</div>
+                </div>
+            </div>
+            </section>
+
+            
+            <section id = "section3">
+                <div clas="vote-container">
+                    <p class="question">Who's your favourite character?</p>
+                    <select name="favourite-character" id="character-select">
+                        <option value="Shinchan">Shinchan</option>
+                        <option value="Misae">Misae</option>
+                        <option value="Hiroshi">Hiroshi</option>
+                        <option value="Himawari">Himawari</option>
+                        <option value="Shiro">Shiro</option>
+                        <option value="Kazama">Kazama</option>
+                        
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="other-character">Character not in the list? Write their name below:<span class = "optional">optional</span></label>
+                    <input type="text" id = "other-character"
+                    name = "other-character"
+                    placeholder="Enter character name"
+                </div>
+                <div class = "form-group">
+                    <label for="reason">Why do you like this character</label>
+                    <textarea id="reason" name = "reason"
+                    placeholder="State your reasons in a couple of lines..."required></textarea>
+                </div>
+                <h3>Tell a bit more about yourself</h1>
+                <div class = "form-group">
+                    <label for="user-name">Your Name</label>
+                    <input type = "text"id="user-name" name="user_name"required>
+                
+                </div>
+                <div class ="form-group">
+                    <label>Your Gender</label>
+                    <div class = "radio-option">
+                        <input type="radio" id = "gender-male"
+                        name = "gender" value="male" required>
+                        <label for="gender-male">Male</label>
+                    </div>
+                    <div class = "radio-option">
+                        <input type="radio" id = "gender-female"
+                        name = "gender" value="female" required>
+                        <label for="gender-male">Female</label> 
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for="birthday">Your Date of Birth</label>
+                    <input type ="date" id ="birthday" name = "birthday" required>
+                    
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" 
+                           placeholder="Enter your email" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+            </section>
+
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Programming4, Lu Renxi. All rights reserved.</p >
+        </footer>
+    
+</body>
+</html>
